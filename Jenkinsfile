@@ -3,21 +3,21 @@ pipeline
     agent any
     stages
     {
-        stage('Download_master')
+        stage('Download_loans')
         {
             steps
             {
                 git 'https://github.com/IntelliqDevops/maven.git'
             }
         }
-        stage('Build_master')
+        stage('Build_loans')
         {
             steps
             {
                 sh 'mvn package'
             }
         }
-        stage('Deploy_master')
+        stage('Deploy_loans')
         {
             steps
             {
